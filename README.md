@@ -15,8 +15,8 @@ Backend - API
 - URL do banco de dados no arquivo `.env`
 
 ### API's
-- /bosts
->1. GET `api/bosts` - Retorna todos os bosts
+- /bots
+>1. GET `api/bots` - Retorna todos os bots
 ```
 REQUEST
 Parâmetros: nenhum
@@ -27,7 +27,7 @@ Data: [
     { _id: "5d12c51619f5a020b4ca6ca5", name: "Bot2"}, 
 ]
 ```
->2. GET `api/bosts/:id` - Retorna um bot buscando pelo id
+>2. GET `api/bots/:id` - Retorna um bot buscando pelo id
 ```
 REQUEST
 Parâmetros: { id: [String] } [query]
@@ -36,7 +36,7 @@ RESPONSE
 Data: { _id: "5d12c47519f5a020b4ca6ca2", name: "Bot"}
     
 ```
->3. POST `api/bosts` - Cria um novo bost
+>3. POST `api/bots` - Cria um novo bost
 ```
 REQUEST
 Parâmetros: { name: [String] } [body]
@@ -46,7 +46,7 @@ RESPONSE
 Data: { _id: "5d12c47519f5a020b4ca6ca2", name: "Bot"}
     
 ```
->4. PUT `api/bosts/:id` - Atualiza um bost
+>4. PUT `api/bots/:id` - Atualiza um bost
 ```
 REQUEST
 Parâmetros: { id: [String] } [query]
@@ -56,7 +56,7 @@ Data: { _id: "5d12c47519f5a020b4ca6ca2", name: "Bot"}
     
 ```
 
->5. DELETE `api/bosts/:id` - Remove um bost
+>5. DELETE `api/bots/:id` - Remove um bost
 ```
 REQUEST
 Parâmetros: { id: [String] } [query]
