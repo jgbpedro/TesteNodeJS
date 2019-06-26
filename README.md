@@ -36,7 +36,7 @@ RESPONSE
 Data: { _id: "5d12c47519f5a020b4ca6ca2", name: "Bot"}
     
 ```
->3. POST `api/bots` - Cria um novo bost
+>3. POST `api/bots` - Cria um novo bot
 ```
 REQUEST
 Parâmetros: { name: [String] } [body]
@@ -46,7 +46,7 @@ RESPONSE
 Data: { _id: "5d12c47519f5a020b4ca6ca2", name: "Bot"}
     
 ```
->4. PUT `api/bots/:id` - Atualiza um bost
+>4. PUT `api/bots/:id` - Atualiza um bot
 ```
 REQUEST
 Parâmetros: { id: [String] } [query]
@@ -56,7 +56,7 @@ Data: { _id: "5d12c47519f5a020b4ca6ca2", name: "Bot"}
     
 ```
 
->5. DELETE `api/bots/:id` - Remove um bost
+>5. DELETE `api/bots/:id` - Remove um bot
 ```
 REQUEST
 Parâmetros: { id: [String] } [query]
