@@ -1,0 +1,40 @@
+{
+  "name": "br.com.testebradesco",
+  "version": "1.0.0",
+  "description": "This project was created for Bradesco Seguros",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node ./node_modules/eslint/bin/eslint.js ./",
+    "lint:fix": "node ./node_modules/eslint/bin/eslint.js ./ --fix",
+    "dev": "nodemon ./index.js --exec babel-node --presets es2015,stage-0",
+    "test": "nodemon ./app.test.js --exec babel-node --presets es2015,stage-0 | tap-spec",
+    "start": "node index.js",
+    "build": "babel . -d dist --ignore dist,node_modules --copy-files --source-maps=inline"
+  },
+  "author": "Jose Guilherme",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.2",
+    "onesignal-node": "^2.1.0",
+    "supertest": "^4.0.2",
+    "tape": "^4.10.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "nodemon": "^1.11.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  }
+}
